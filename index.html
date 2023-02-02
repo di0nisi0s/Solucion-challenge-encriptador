@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="vector">
+                <img src="/imagenes/Logo.png" alt="Logo de Alura">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <textarea id="textInput" class="text-input" placeholder="Ingrese el texto aquí"></textarea>
+
+        <div class="warning">
+            <div class="warning-icon">
+                <img src="/imagenes/ExclamationIcon.png" class="warning-vector" alt="Imagen signo de exclamación">
+            </div>
+            <p>
+                Solo letras minúsculas y sin acentos
+            </p>
+        </div>
+
+        <div class="botones">
+            <button class="btn-encriptar" onclick="btnEnc()"> Encriptar</button>
+            <button class="btn-desencriptar"  onclick="btnDes()" >Desencriptar</button>
+        </div>
+
+        <div class="text-output">
+            <div class="Muñeco">
+                <img src="/imagenes/Muñeco.png" class="drawn">
+            </div>
+            <div class="text-output-void">
+                <p id="text1">Ningún mensaje fue encontrado</p>
+                <p id="text2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="text-output-full">
+                <textarea id="textOutput" class="text-output-result" disabled=""></textarea>
+                <div class="btn-copiar">
+                    <button id="btn-copiar">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
